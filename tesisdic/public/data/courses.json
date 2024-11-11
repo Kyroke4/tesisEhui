@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "title": "Pronombres personales",
+        "description": "Los pronombres personales designan a los participantes en un discurso."
+    },
+    {
+        "id": 2,
+        "title": "Vocabulario de clase",
+        "description": "Aprende las palabras que usarás día a día en clase."
+    },
+    {
+        "id": 3,
+        "title": "Números",
+        "description": "Aprende los números del 1 al 20."
+    },
+    {
+        "id": 4,
+        "title": "Colores",
+        "description": "Conoce los colores."
+    },
+    {
+        "id": 5,
+        "title": "Vocabulario general",
+        "description": "Aprende palabras comunes de la lengua."
+    }
+    
+]

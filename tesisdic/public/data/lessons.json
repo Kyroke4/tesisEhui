@@ -1,0 +1,352 @@
+{
+    "pronouns": [
+      {
+        "id": 1,
+        "nameSpanish": "Yo",
+        "nameYaqui": "Inepo",
+        "imageSrc": "../../images/pronom01.svg",
+        "audioSrc": "../../audio/01.mp3"
+      },
+      {
+        "id": 2,
+        "nameSpanish": "Tu",
+        "nameYaqui": "Empo",
+        "imageSrc": "../../images/pronom02.svg",
+        "audioSrc": "../../audio/02.mp3"
+      },
+      {
+        "id": 3,
+        "nameSpanish": "El",
+        "nameYaqui": "Aapo",
+        "imageSrc": "../../images/pronom03.svg",
+        "audioSrc": "../../audio/03.mp3"
+      },
+      {
+        "id": 4,
+        "nameSpanish": "Ella",
+        "nameYaqui": "Aapo",
+        "imageSrc": "../../images/pronom04.svg",
+        "audioSrc": "../../audio/04.mp3"
+      },
+      {
+        "id": 5,
+        "nameSpanish": "Nosotros",
+        "nameYaqui": "Itepo",
+        "imageSrc": "../../images/pronom05.svg",
+        "audioSrc": "../../audio/05.mp3"
+      },
+      {
+        "id": 6,
+        "nameSpanish": "Ustedes",
+        "nameYaqui": "Eme'e",
+        "imageSrc": "../../images/pronom06.svg",
+        "audioSrc": "../../audio/06.mp3"
+      },
+      {
+        "id": 7,
+        "nameSpanish": "Ellos",
+        "nameYaqui": "Bempo",
+        "imageSrc": "../../images/pronom07.svg",
+        "audioSrc": "../../audio/07.mp3"
+      },
+      {
+        "id": 8,
+        "nameSpanish": "Ellas",
+        "nameYaqui": "Bempo",
+        "imageSrc": "../../images/pronom08.svg",
+        "audioSrc": "../../audio/08.mp3"
+      }
+    ],
+
+    "vocabulary": [
+    {
+      "id": 9,
+      "nameSpanish": "Maestro",
+      "nameYaqui": "Maejto",
+      "imageSrc": "../../images/vc01.svg",
+      "audioSrc": "../../audio/09.mp3"
+    },
+    {
+      "id": 10,
+      "nameSpanish": "Libro",
+      "nameYaqui": "Jiosiam",
+      "imageSrc": "../../images/vc02.svg",
+      "audioSrc": "../../audio/10.mp3"
+    },
+    {
+      "id": 11,
+      "nameSpanish": "Mochila",
+      "nameYaqui": "Boosa",
+      "imageSrc": "../../images/vc03.svg",
+      "audioSrc": "../../audio/11.mp3"
+    },
+    {
+      "id": 12,
+      "nameSpanish": "Pluma",
+      "nameYaqui": "Boa",
+      "imageSrc": "../../images/vc04.svg",
+      "audioSrc": "../../audio/12.mp3"
+    },
+    {
+      "id": 13,
+      "nameSpanish": "Lápiz",
+      "nameYaqui": "Laapis",
+      "imageSrc": "../../images/vc05.svg",
+      "audioSrc": "../../audio/13.mp3"
+    },
+    {
+      "id": 14,
+      "nameSpanish": "Clase",
+      "nameYaqui": "Nau kaate",
+      "imageSrc": "../../images/vc06.svg",
+      "audioSrc": "../../audio/14.mp3"
+    },
+    {
+      "id": 15,
+      "nameSpanish": "Escritorio",
+      "nameYaqui": "Ji’ojjo’osoi",
+      "imageSrc": "../../images/vc07.svg",
+      "audioSrc": "../../audio/15.mp3"
+    }
+  ],
+
+  "numbers": [
+    {
+      "id": 16,
+      "nameSpanish": "Uno",
+      "nameYaqui": "Wepul",
+      "imageSrc": "../../images/num01.svg",
+      "audioSrc": "../../audio/uno.mp3"
+    },
+    {
+      "id": 17,
+      "nameSpanish": "Dos",
+      "nameYaqui": "Woi",
+      "imageSrc": "../../images/num02.svg",
+      "audioSrc": "../../audio/dos.mp3"
+    },
+    {
+      "id": 18,
+      "nameSpanish": "Tres",
+      "nameYaqui": "Vahi",
+      "imageSrc": "../../images/num03.svg",
+      "audioSrc": "../../audio/tres.mp3"
+    },
+    {
+      "id": 19,
+      "nameSpanish": "Cuatro",
+      "nameYaqui": "Naiki",
+      "imageSrc": "../../images/num04.svg",
+      "audioSrc": "../../audio/cuatro.mp3"
+    },
+    {
+      "id": 20,
+      "nameSpanish": "Cinco",
+      "nameYaqui": "Mamni",
+      "imageSrc": "../../images/num05.svg",
+      "audioSrc": "../../audio/cinco.mp3"
+    },
+    {
+      "id": 21,
+      "nameSpanish": "Seis",
+      "nameYaqui": "Busani",
+      "imageSrc": "../../images/num06.svg",
+      "audioSrc": "../../audio/seis.mp3"
+    },
+    {
+      "id": 22,
+      "nameSpanish": "Siete",
+      "nameYaqui": "Woi busani",
+      "imageSrc": "../../images/num07.svg",
+      "audioSrc": "../../audio/siete22.mp3"
+    },
+    {
+      "id": 23,
+      "nameSpanish": "Ocho",
+      "nameYaqui": "Woi naiki",
+      "imageSrc": "../../images/num08.svg",
+      "audioSrc": "../../audio/ocho.mp3"
+    },
+    {
+      "id": 24,
+      "nameSpanish": "Nueve",
+      "nameYaqui": "Betani",
+      "imageSrc": "../../images/num09.svg",
+      "audioSrc": "../../audio/nueve.mp3"
+    },
+    {
+      "id": 25,
+      "nameSpanish": "Diez",
+      "nameYaqui": "Woi mamni",
+      "imageSrc": "../../images/num10.svg",
+      "audioSrc": "../../audio/diez.mp3"
+    },
+    {
+      "id": 26,
+      "nameSpanish": "Once",
+      "nameYaqui": "Woi mamni ama wepul",
+      "imageSrc": "../../images/num11.svg",
+      "audioSrc": "../../audio/once.mp3"
+    },
+    {
+      "id": 27,
+      "nameSpanish": "Veinte",
+      "nameYaqui": "Senu tekwa",
+      "imageSrc": "../../images/num12.svg",
+      "audioSrc": "../../audio/veinte.mp3"
+    }
+  ],
+  "colors": [
+    {
+      "id": 70,
+      "nameSpanish": "Rojo",
+      "nameYaqui": "Sikil",
+      "imageSrc": "../../images/col01.svg",
+      "audioSrc": "../../audio/70.mp3"
+    },
+    {
+      "id": 71,
+      "nameSpanish": "Verde",
+      "nameYaqui": "Sial",
+      "imageSrc": "../../images/col02.svg",
+      "audioSrc": "../../audio/71.mp3"
+    },
+    {
+      "id": 72,
+      "nameSpanish": "Amarillo",
+      "nameYaqui": "Sawal",
+      "imageSrc": "../../images/col03.svg",
+      "audioSrc": "../../audio/72.mp3"
+    },
+    {
+      "id": 73,
+      "nameSpanish": "Negro",
+      "nameYaqui": "Chukul",
+      "imageSrc": "../../images/col04.svg",
+      "audioSrc": "../../audio/73.mp3"
+    },
+    {
+      "id": 74,
+      "nameSpanish": "Blanco",
+      "nameYaqui": "Tosal",
+      "imageSrc": "../../images/col05.svg",
+      "audioSrc": "../../audio/74.mp3"
+    },
+    {
+      "id": 75,
+      "nameSpanish": "Azul",
+      "nameYaqui": "Teca",
+      "imageSrc": "../../images/col06.svg",
+      "audioSrc": "../../audio/75.mp3"
+    },
+    {
+      "id": 76,
+      "nameSpanish": "Café",
+      "nameYaqui": "Kape",
+      "imageSrc": "../../images/col07.svg",
+      "audioSrc": "../../audio/76.mp3"
+    }
+  ],
+
+  "generalVocabulary": [
+    {
+      "id": 80,
+      "nameSpanish": "Chapulines",
+      "nameYaqui": "Cócorit",
+      "imageSrc": "../../images/VoG-01.svg",
+      "audioSrc": "../../audio/80.mp3"
+    },
+    {
+      "id": 81,
+      "nameSpanish": "Laguna",
+      "nameYaqui": "Bácum",
+      "imageSrc": "../../images/VoG-02.svg",
+      "audioSrc": "../../audio/81.mp3"
+    },
+    {
+      "id": 82,
+      "nameSpanish": "Punta de flecha",
+      "nameYaqui": "Vicam",
+      "imageSrc": "../../images/VoG-03.svg",
+      "audioSrc": "../../audio/82.mp3"
+    },
+    {
+      "id": 83,
+      "nameSpanish": "Topos",
+      "nameYaqui": "Pótam",
+      "imageSrc": "../../images/VoG-04.svg",
+      "audioSrc": "../../audio/83.mp3"
+    },
+    {
+      "id": 84,
+      "nameSpanish": "Ratas",
+      "nameYaqui": "Torim",
+      "imageSrc": "../../images/VoG-05.svg",
+      "audioSrc": "../../audio/84.mp3"
+    },
+    {
+      "id": 85,
+      "nameSpanish": "Pájaro",
+      "nameYaqui": "Huiribis",
+      "imageSrc": "../../images/VoG-06.svg",
+      "audioSrc": "../../audio/85.mp3"
+    },
+    {
+      "id": 86,
+      "nameSpanish": "Remansos",
+      "nameYaqui": "Ráhum",
+      "imageSrc": "../../images/VoG-07.svg",
+      "audioSrc": "../../audio/86.mp3"
+    },
+    {
+      "id": 87,
+      "nameSpanish": "Pitahya",
+      "nameYaqui": "Belem",
+      "imageSrc": "../../images/VoG-08.svg",
+      "audioSrc": "../../audio/87.mp3"
+    },
+    {
+      "id": 88,
+      "nameSpanish": "Casa del padre viejo",
+      "nameYaqui": "Itom",
+      "imageSrc": "../../images/VoG-09.svg",
+      "audioSrc": "../../audio/88.mp3"
+    },
+    {
+      "id": 89,
+      "nameSpanish": "Flor",
+      "nameYaqui": "Sewa",
+      "imageSrc": "../../images/VoG-10.svg",
+      "audioSrc": "../../audio/89.mp3"
+    },
+    {
+      "id": 90,
+      "nameSpanish": "Persona",
+      "nameYaqui": "Yoreme",
+      "imageSrc": "../../images/VoG-11.svg",
+      "audioSrc": "../../audio/90.mp3"
+    },
+    {
+      "id": 91,
+      "nameSpanish": "Hombre blanco",
+      "nameYaqui": "Yori",
+      "imageSrc": "../../images/VoG-12.svg",
+      "audioSrc": "../../audio/91.mp3"
+    },
+    {
+      "id": 92,
+      "nameSpanish": "Hermosa",
+      "nameYaqui": "Tutuli",
+      "imageSrc": "../../images/VoG-13.svg",
+      "audioSrc": "../../audio/92.mp3"
+    },
+    {
+      "id": 93,
+      "nameSpanish": "Desnudo",
+      "nameYaqui": "Bichi",
+      "imageSrc": "../../images/VoG-14.svg",
+      "audioSrc": "../../audio/93.mp3"
+    }
+  ]
+  }
+  
