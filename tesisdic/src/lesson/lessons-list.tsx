@@ -50,15 +50,7 @@ const LessonsList = () => {
             selectedAnswer={selectedAnswer} // Pasar la respuesta seleccionada
             setSelectedAnswer={setSelectedAnswer} // Función para actualizar la respuesta
           />
-            <h1>Pronouns Length: {lessonLength}</h1>
-            <h1>Pronoun: {currentLesson?.nameSpanish} - {currentLesson?.nameYaqui}</h1>
             <h1>{currentLesson?.id}/{lessonLength} leciones</h1>
-            <img src={currentLesson?.imageSrc} alt={currentLesson?.nameSpanish} />
-            <audio controls>
-              <source src={currentLesson?.audioSrc} type="audio/mp3" />
-            </audio>
-            
-            <button onClick={handleNextLesson}>Ir a la siguiente lección</button>
 
           </div>
         </div>

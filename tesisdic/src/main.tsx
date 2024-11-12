@@ -5,6 +5,8 @@ import './index.css'
 import App from './App.tsx'
 import Home from './main/learn/Home.tsx'
 import Page from './lesson/Page.tsx'
+import Juramento from './juramento/Page.tsx'
+import Leer from './leer/Page.tsx'
 
 const router = createBrowserRouter([{
   path: '/',
@@ -17,6 +19,14 @@ const router = createBrowserRouter([{
 {
   path:'/lesson',
   element: <Page></Page>,
+},
+{
+  path:'/juramento',
+  element: <Juramento></Juramento>,
+},
+{
+  path:'/leer',
+  element: <Leer></Leer>,
 }
 ]);
 

@@ -9,9 +9,9 @@ function Home(){
         <Layout>
 
             <div className="flex flex-row-reverse gap-[48px] px-6">
-                <StickyWrapper>
+                {/* <StickyWrapper>
                     My sticky sidebar
-                </StickyWrapper>
+                </StickyWrapper> */}
                 <FeedWrapper>
                     <Header title="Yaqui">
                         
