@@ -12,7 +12,7 @@ type Pronoun = {
 
 const LessonsList = () => {
   const [lessons, setLessons] = useState<any>(null);
-  const [currentLessonId, setCurrentLessonId] = useState<number>(1); // Default to show pronoun with id:1
+  const [currentLessonId, setCurrentLessonId] = useState<number>(1); 
   const [selectedAnswer, setSelectedAnswer] = useState<Pronoun | null>(null);
   useEffect(() => {
     // ESTE ES EL JSON A CARGAR
@@ -22,7 +22,6 @@ const LessonsList = () => {
       .catch((error) => console.error("Error fetching lessons:", error));
   }, []);
 
-  // Ensure lessons is loaded and pronouns is an array
   if (!lessons || !Array.isArray(lessons.pronouns)) {
     return <p>Cargando...</p>;
   }
@@ -50,7 +49,7 @@ const LessonsList = () => {
             selectedAnswer={selectedAnswer} // Pasar la respuesta seleccionada
             setSelectedAnswer={setSelectedAnswer} // Función para actualizar la respuesta
           />
-            <h1>{currentLesson?.id}/{lessonLength} leciones</h1>
+            <h1 className="pt-10">{currentLesson?.id}/{lessonLength} leciones</h1>
 
           </div>
         </div>

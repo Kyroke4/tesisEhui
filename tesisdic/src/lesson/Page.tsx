@@ -16,6 +16,7 @@ const LessonPage = ()=>{
                 </LessonList>
                 <ExitModal ></ExitModal>
             </div>
+            
         </Layout>
         
     );

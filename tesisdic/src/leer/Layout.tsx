@@ -1,7 +1,5 @@
 // src/components/Layout.tsx
 import React, { ReactNode } from 'react';
-import Header from '../Header';
-import Footer from '../Footer';
 import { Sidebar } from '@/components/sidebar';
 import { MobileHeader } from '@/components/mobile-header';
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import Footer from './Footer';
 
 type Pronoun = {
   id: number;
@@ -24,97 +25,84 @@ const QuestionBubble: React.FC<QuestionBubbleProps> = ({
   selectedAnswer,
   setSelectedAnswer,
 }) => {
-  const shuffleArray = (array: any[]) => {
-    return array.sort(() => Math.random() - 0.5);
-  };
+  // Shuffle function to randomize options
+  const shuffleArray = (array: any[]) => array.sort(() => Math.random() - 0.5);
 
+  // Generate the options for the multiple-choice question
   const generateOptions = (correctPronoun: Pronoun) => {
     const incorrectOptions = allPronouns.filter((pronoun) => pronoun.id !== correctPronoun.id);
     const randomIncorrectOptions = shuffleArray(incorrectOptions).slice(0, 2);
-    const options = [correctPronoun, ...randomIncorrectOptions];
-    return shuffleArray(options);
+    return shuffleArray([correctPronoun, ...randomIncorrectOptions]);
   };
 
+  // State to hold the shuffled options
   const [options, setOptions] = useState<Pronoun[]>([]);
   const [checkedAnswer, setCheckedAnswer] = useState(false);
 
+  // Update options whenever the correctPronoun changes
   useEffect(() => {
     setOptions(generateOptions(correctPronoun));
-    setCheckedAnswer(false);
+    setCheckedAnswer(false); // Reset the answer check when options are reset
   }, [correctPronoun]);
 
+  // Play the pronunciation audio for a given pronoun
   const playAudio = (audioSrc: string) => {
     const audio = new Audio(audioSrc);
     audio.play();
   };
 
+  // Handle when a user selects an answer
   const handleAnswerClick = (pronoun: Pronoun) => {
-    setSelectedAnswer(pronoun);
-    setCheckedAnswer(false);
-    playAudio(pronoun.audioSrc);
+    setSelectedAnswer(pronoun);  // Set the selected answer
+    setCheckedAnswer(false); // Reset answer check
+    playAudio(pronoun.audioSrc);  // Play audio for the selected pronoun
   };
 
+  // Check if the selected answer is correct
   const isCorrectAnswer = selectedAnswer?.id === correctPronoun.id;
 
+  // Handle proceeding to the next lesson
   const handleNextLesson = () => {
-    setSelectedAnswer(null);
-    setCheckedAnswer(false);
-    onNext();
+    setSelectedAnswer(null);  // Reset selected answer
+    setCheckedAnswer(false);  // Reset checked answer state
+    onNext();  // Call the next lesson function
   };
 
   return (
-    <div className="question-bubble">
-      <div className="options space-y-4"> {/* Espaciado vertical entre los botones */}
-        {options.map((option) => (
-          <Button
-            key={option.id}
-            className={`h-full border-2 rounded-xl border-b-4 hover:bg-black/5 p-4 lg:p-6 cursor-pointer active:border-b-2
-              ${selectedAnswer?.id === option.id
-                ? (checkedAnswer
-                    ? (isCorrectAnswer ? 'bg-green-500 border-green-600' : 'bg-red-500 border-red-600')
-                    : 'bg-sky-500')
-                : 'bg-white'}
-              ${selectedAnswer?.id === option.id ? 'shadow-lg' : ''}
-              transition-colors duration-300 ease-in-out
-            `}
-            onClick={() => handleAnswerClick(option)}
-          >
-            <div className="flex items-center justify-between w-full">
-              <span className="block text-sm text-gray-500 pr-4">{option.nameYaqui}</span>
-              <img
-                src={option.imageSrc}
-                alt={option.nameYaqui}
-                className="option-image w-12 h-12 object-contain"
-              />
-            </div>
-          </Button>
-        ))}
-      </div>
-
-      {selectedAnswer && checkedAnswer && (
-        <div className={`result-message ${isCorrectAnswer ? 'correct' : 'incorrect'}`}>
-          {isCorrectAnswer ? '¡Correcto!' : 'Incorrecto, prueba otra vez.'}
+    <>
+      <div className="h-[300px] w-full flex flex-col items-center">
+        <div className="w-full flex flex-col gap-4 px-4">
+          {/* Render options as a vertical list */}
+          {options.map((option) => (
+            <Button
+              key={option.id}
+              className={`w-full h-16 border-2 rounded-xl border-b-4 hover:bg-black/5 p-4 lg:p-6 cursor-pointer active:border-b-2
+                ${selectedAnswer?.id === option.id
+                  ? (checkedAnswer
+                      ? (isCorrectAnswer ? 'bg-green-500 border-green-600' : 'bg-red-500 border-red-600')
+                      : 'bg-sky-500') // Highlight selected option based on answer status
+                  : 'bg-white'}
+                ${selectedAnswer?.id === option.id ? 'shadow-lg' : ''} // Add shadow to selected option
+                transition-colors duration-300 ease-in-out
+              `}
+              onClick={() => handleAnswerClick(option)}  // Handle answer selection
+            >
+              <div className="flex items-center justify-between w-full">
+                <span className="text-sm text-gray-500">{option.nameYaqui}</span>
+                <img src={option.imageSrc} alt={option.nameYaqui} className="w-12 h-12" />
+              </div>
+            </Button>
+          ))}
         </div>
-      )}
-
-      <div className="mt-6 space-x-4"> {/* Espaciado horizontal entre los botones de acción */}
-        <Button
-          onClick={() => setCheckedAnswer(true)}
-          className="check-answer-button p-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-          disabled={!selectedAnswer}
-        >
-          Verificar respuesta
-        </Button>
-
-        <Button
-          onClick={handleNextLesson}
-          className="next-lesson-button p-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition"
-          disabled={!isCorrectAnswer || !checkedAnswer}
-        >
-          Siguiente lección
-        </Button>
       </div>
-    </div>
+      <Footer
+        isCorrectAnswer={isCorrectAnswer}
+        checkedAnswer={checkedAnswer}
+        selectedAnswer={!!selectedAnswer}  // Ensure boolean value is passed for selectedAnswer
+        onCheckAnswer={() => setCheckedAnswer(true)}  // Mark the answer as checked
+        onNextLesson={handleNextLesson}  // Handle next lesson button click
+      />
+    </>
   );
 };
 

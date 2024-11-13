@@ -1,12 +1,10 @@
 // src/components/Layout.tsx
 import React, { ReactNode } from 'react';
-import Header from '../Header';
-import Footer from '../Footer';
 import { Sidebar } from '@/components/sidebar';
 import { MobileHeader } from '@/components/mobile-header';
 
 interface LayoutProps {
-  children: ReactNode;  // Aquí se define el tipo de contenido que se inyectará en el layout
+  children: ReactNode;  
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
